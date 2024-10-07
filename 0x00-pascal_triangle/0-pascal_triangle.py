@@ -18,13 +18,11 @@ def pascal_triangle(n):
 
     for x1 in range(1, n):
         row = [1]
-        if x1 == 1:
-            row.append(1)
-        else:
-            prev_row = triangle[x1-1]
+        prev_row = triangle[x1 - 1]
 
-            for x2 in range(x1):
-                row.append(prev_row[x2] + prev_row[x2 + 1])
+        for x2 in range(1, x1):
+            row.append(prev_row[x2 - 1] + prev_row[x2])
+
         row.append(1)
         triangle.append(row)
 
