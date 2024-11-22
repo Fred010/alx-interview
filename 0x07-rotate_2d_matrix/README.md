@@ -1,7 +1,3 @@
-Here’s a draft for your `README.md` file:
-
----
-
 # **0x07. Rotate 2D Matrix**
 
 ## **Description**
